@@ -5,19 +5,19 @@ This repository contains ​​1 shell script​​ and ​​6 Python scripts�
 
 `python target_nontarget_statistics.py [all_adaptive.fastq] [adaptive-target.sam] [adaptive-nontarget.sam]`  
 ​​Input​​:  
-Raw sequence file, SAM alignment files for target/non-target sequences  
+Raw sequence file, SAM alignment files for target/non-target sequences.  
 ​​Output​​:  
 Total sequences/bases, uniquely matched sequences/bases to target/non-target, and dual-matched sequences/bases.
 
 `python match_read_number_with_time.py [sequencing_summary.txt] [adaptive-target.sam] [control-target.sam]`  
 Input:  
-Nanopore sequencing summary file, SAM alignment files for adaptive/control groups  
+Nanopore sequencing summary file, SAM alignment files for adaptive/control groups.  
 Output:  
 A 5-column table with sequencing duration, sequence counts, and base counts for both groups.
 
 `python unblock_reads_matched_number.py [all_adaptive.fastq] [sequencing_summary.txt] [adaptive-target.sam]`   
 Input:  
-Raw sequence file, nanopore sequencing summary file, SAM alignment files  
+Raw sequence file, nanopore sequencing summary file, SAM alignment file.  
 Output:  
 Statistics (counts/average/median read lengths) for accepted/rejected sequences matching/non-matching targets.  
 
